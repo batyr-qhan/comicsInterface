@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Peralta&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div id="navbar" class="header__inner">
+                <a class="header__tab active" href="#archive">Archive</a>
+                <a class="header__tab" href="#whatif">What If?</a>
+                <a class="header__tab" href="#blag">Blag</a>
+                <a class="header__tab" href="#howto">How to</a>
+                <a class="header__tab" href="#store">Store</a>
+                <a class="header__tab" href="#about">About</a>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="main__inner">
+                <div class="main__left">
+                    <button id="toTheFirst" class="btn"><span>First</span></button>
+                    <button id="prevBtn" class="btn"><span>Prev</span></button>
+                </div>
+
+                <div class="main__center center">
+                    <div class="center__title">
+                        <span id="title"></span>
+                        <button id="randomBtn" class="btn">Random</button>
+                        <button id="modalBtn" class="btn">Get info</button>
+                    </div>
+                    <div class="center__image" id="centerBlock">
+                        <a id="pictureLink" href="" target="_blank"><img id="picture" src="" alt="picture"/></a>
+                    </div>
+                </div>
+                <div class="main__right">
+                    <button id="nextBtn" class="btn"><span>Next</span></button>
+                    <button id="toTheLast" class="btn"><span>Last</span></button>
+                </div>
+
+            </div>
+        </div>
+    </main>
+</div>
+<div id="myModal" class="modal">
+    <div class="modal__content">
+        <div class="modal__close">&times;</div>
+        <div class="modal__title">
+            <span>Title:</span>
+            <span id="modalTitle"></span>
+        </div>
+        <div class="modal__dateUpdated">
+            <span>Date Updated:</span>
+            <span id="modalDate"></span>
+        </div>
+        <p>Transcription:</p>
+        <p id="transcription">Some text in the Modal..</p>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
